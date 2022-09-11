@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter , Route} from 'react-router-dom' ;
 import Home from './Components/Home Page/Home';
 import GithubCom from './Components/Github Search/GithubCom';
-import CardList from './Components/Drag and Drop/CardList'
+import Drag from './Components/Drag and Drop/Drag and Drop'
 
 class App extends Component {
   render () {
@@ -11,7 +11,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Route exact path = "/" component = {Home} />
-          <Route path = "/drag" component = {CardList} />
+          <Route path = "/drag" component = {Drag} />
           <Route path = "/github" component = {GithubCom} />
         </div>
       </BrowserRouter>

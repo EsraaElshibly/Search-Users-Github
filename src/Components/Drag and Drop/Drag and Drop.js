@@ -17,35 +17,37 @@ export default function Drag() {
         setItemList(updatedList)
     }
     return(
-        <div className='drag-list row'>
-            <div className='col-12'>
-                <DragDropContext onDragEnd = {handleDrop} >
-                    <h2>Drag and Drop List</h2>
-                    <Droppable droppableId = 'list-container'>
-                        {(provided) => (
-                            <div 
-                                className='list-container'
-                                {...provided.droppableProps}
-                                ref={provided.innerRef}
-                            >
-                                {itemList.map((item, index) => (
-                                    <Draggable key={item} draggableId={item} index={index}>
-                                        {(provided) => (
-                                            <div 
-                                                className='item-container'
-                                                ref={provided.innerRef}
-                                                {...provided.dragHandleProps}
-                                                {...provided.draggableProps}
-                                            > {item} </div>
-                                        )}
-                                    </Draggable>
-                                ))}
-                                {provided.placeholder}
-                            </div>
-                        )}
-                    </Droppable>
-                </DragDropContext>
-            </div>
+        <div className='drag-list container'>
+            <div className='row'>
+                <div className='col-12'>
+                    <DragDropContext onDragEnd = {handleDrop} >
+                        <h2>Drag and Drop List</h2>
+                        <Droppable droppableId = 'list-container'>
+                            {(provided) => (
+                                <div 
+                                    className='list-container'
+                                    {...provided.droppableProps}
+                                    ref={provided.innerRef}
+                                >
+                                    {itemList.map((item, index) => (
+                                        <Draggable key={item} draggableId={item} index={index}>
+                                            {(provided) => (
+                                                <div 
+                                                    className='item-container'
+                                                    ref={provided.innerRef}
+                                                    {...provided.dragHandleProps}
+                                                    {...provided.draggableProps}
+                                                > {item} </div>
+                                            )}
+                                        </Draggable>
+                                    ))}
+                                    {provided.placeholder}
+                                </div>
+                            )}
+                        </Droppable>
+                    </DragDropContext>
+                </div>
+                </div>
         </div>
     )
 }

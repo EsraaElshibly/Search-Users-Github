@@ -6,6 +6,7 @@
 
 h2 {
     text-align: center;
+    margin-top: 70px;
 }
 
 .list-container {
@@ -17,6 +18,10 @@ h2 {
     width: 300px ;
     flex-direction: column;
     margin-left: 35%;
+}
+
+@media (max-width: 600px) {
+    .list-container {margin-left: 5%;}
 }
 
 .item-container {
