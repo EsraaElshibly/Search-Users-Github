@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+.list-container {
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(192, 155, 192);
+    padding: 20px 0px ;
+    width: 300px ;
+    flex-direction: column;
+    margin-left: 35%;
+}
+
+.item-container {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 20px 0px ;
+    margin: 15px 50px;
+    text-align: center;
+    width: 200px;
+}

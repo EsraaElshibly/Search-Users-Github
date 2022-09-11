@@ -1,0 +1,45 @@
+.card {
+    margin: 20px 0px;
+    padding: 10px 20px ;
+}
+
+.card-design {
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.card-design h5 {text-transform: capitalize ;}
+
+.card-design h5 .title {
+    background-color: rgb(136, 243, 136);
+    padding: 5px 8px;
+    margin-left: 12px;
+}
+
+.card-design h5 .job {
+    display: block;
+    padding-top: 10px;
+}
+
+.card-design img {
+    width: 28%;
+    height: 30%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 4px 4px 4px 4px rgb(191, 191, 235);
+    cursor: pointer;
+}
+
+.icon .vertical-line {border: 1px solid rgb(141, 137, 137); height: 70%;}
+
+.icon i {color: rgb(141, 137, 137);}
+
+.icon i span {
+    padding-bottom: 10px;
+    padding-left: 20px;
+}

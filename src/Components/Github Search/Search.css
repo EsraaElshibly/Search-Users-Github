@@ -1,0 +1,25 @@
+.search-form h3 {
+    margin-top: 70px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.search-form .search {
+    display: flex;
+    margin: 30px 0px;
+}
+
+.search-form .search input {margin-right: 20px;}
+
+.search-form .card {
+    width: 50%;
+    margin-left: 20%;
+    box-shadow: 4px 4px 4px 4px rgb(191, 191, 235);
+}
+
+.search-form .card img {
+    height: 200px ;
+    width: 98%;
+    padding: 2%;
+}
+

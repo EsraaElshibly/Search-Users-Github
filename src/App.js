@@ -1,23 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter , Route} from 'react-router-dom' ;
-import Nav from './Components/Nav';
-import Footer from './Components/footer';
-import Home from './Components/Home';
-import About from './Components/About';
-import Contact from './Components/Contact';
+import Home from './Components/Home Page/Home';
+import GithubCom from './Components/Github Search/GithubCom';
+import CardList from './Components/Drag and Drop/CardList'
 
 class App extends Component {
   render () {
     return (
       <BrowserRouter>
         <div className="App">
-          <Nav />
           <Route exact path = "/" component = {Home} />
-          <Route path = "/About" component = {About} />
-          <Route path = "/Contact us" component = {Contact} />
-
-          <Footer />
+          <Route path = "/drag" component = {CardList} />
+          <Route path = "/github" component = {GithubCom} />
         </div>
       </BrowserRouter>
     );

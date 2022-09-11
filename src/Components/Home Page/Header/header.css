@@ -1,0 +1,21 @@
+.header {
+    background-color: rgb(234, 241, 241);
+    text-align: center;
+}
+
+.header .head h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.header-btn .bttn {
+    display: flex ;
+    align-items:center;
+    margin-bottom: 70px;
+}
+
+.header .btn {
+    border-radius: 40%;
+    margin-right: 90px;
+    margin-top: 20px;
+}
